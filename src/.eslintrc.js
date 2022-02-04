@@ -14,5 +14,14 @@ module.exports = {
     ],
     'no-console': 0,
     'import/prefer-default-export': 'off',
+    'react/forbid-prop-types': 'off',
+  },
+  settings: {
+    'import/resolver': {
+      node: {
+        paths: ['src'],
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+    },
   },
 };
