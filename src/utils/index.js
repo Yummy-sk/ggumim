@@ -1,1 +1,1 @@
-export { seeMoreUrl, closeUrl } from 'utils/seeMoreRoot';
+export { seeMoreUrl, closeUrl, badgeUrl } from 'utils/urls';

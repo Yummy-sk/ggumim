@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { PhotoView } from 'components';
+import { PhotoView, Swiper } from 'components';
 import * as S from './style';
 
 export function Contents({ data }) {
   const { imageUrl, productList } = data;
-  console.log(productList);
+
   const [lists, setLists] = useState(
     productList.map(product => {
       return { ...product, isClick: false };
@@ -13,7 +13,6 @@ export function Contents({ data }) {
   );
 
   const onClick = id => {
-    console.log(id);
     setLists(
       lists.map(list =>
         list.productId === id
@@ -25,9 +24,10 @@ export function Contents({ data }) {
 
   return (
     <S.Container>
-      <div>
+      <S.Wrapper>
         <PhotoView lists={lists} imageUrl={imageUrl} onClick={onClick} />
-      </div>
+        <Swiper lists={lists} onClick={onClick} />
+      </S.Wrapper>
     </S.Container>
   );
 }

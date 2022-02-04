@@ -15,6 +15,7 @@ module.exports = {
     'no-console': 0,
     'import/prefer-default-export': 'off',
     'react/forbid-prop-types': 'off',
+    'prettier/prettier': ['error', { endOfLine: 'auto' }],
   },
   settings: {
     'import/resolver': {
