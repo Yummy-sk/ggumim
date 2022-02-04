@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { TagIcon, Modal } from 'components';
 import * as S from './style';
 
 export function SeeMore({ list, onClick }) {
@@ -8,12 +9,10 @@ export function SeeMore({ list, onClick }) {
   const adjustedY = pointY * 2.08;
 
   return (
-    <S.Image
-      isClick={isClick}
-      onClick={() => onClick(productId)}
-      x={adjustedX}
-      y={adjustedY}
-    />
+    <S.Container x={adjustedX} y={adjustedY}>
+      <TagIcon isClick={isClick} onClick={e => onClick(productId, e)} />
+      <Modal list={list} location={{ x: adjustedX, y: adjustedY }} />
+    </S.Container>
   );
 }
 

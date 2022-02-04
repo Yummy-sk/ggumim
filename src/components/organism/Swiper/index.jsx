@@ -21,18 +21,16 @@ export function Swiper({ lists, onClick }) {
   };
 
   const onMouseDown = e => {
+    e.stopPropagation();
+    e.preventDefault();
     setPressed(true);
     setStartX(e.nativeEvent.offsetX - innerSlider.current.offsetLeft);
-    e.target.style.cursor = 'garbbing';
-  };
-
-  const onMouseEnter = e => {
-    e.target.style.cursor = 'grab';
   };
 
   const onMouseMove = e => {
-    if (!pressed) return;
     e.preventDefault();
+    e.stopPropagation();
+    if (!pressed) return;
 
     const {
       current: { style },
@@ -53,7 +51,6 @@ export function Swiper({ lists, onClick }) {
       ref={outerSlider}
       onMouseDown={onMouseDown}
       onMouseMove={onMouseMove}
-      onMouseEnter={onMouseEnter}
     >
       <S.SliderBoundary ref={innerSlider}>
         {lists.map(list => (

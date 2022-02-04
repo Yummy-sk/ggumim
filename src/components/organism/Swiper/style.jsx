@@ -11,14 +11,12 @@ export const Container = styled.div`
 export const SliderBoundary = styled.div`
   position: absolute;
 
-  /* width: 200%; */
   height: 100%;
 
   display: flex;
 
   justify-content: start;
   align-items: center;
-  pointer-events: none;
 
   transition: 0.1s;
 `;

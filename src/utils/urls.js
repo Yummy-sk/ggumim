@@ -7,4 +7,9 @@ const closeUrl =
 const badgeUrl =
   'https://cdn.ggumim.co.kr/storage/20211117191419RW6JS6bjRm.png';
 
-export { seeMoreUrl, closeUrl, badgeUrl };
+const modalHeadUrl =
+  'https://cdn.ggumim.co.kr/storage/20211118152728RO3OXnhkrC.png';
+
+const moveUrl = 'https://cdn.ggumim.co.kr/storage/20211102181936xqHzyWAmb8.png';
+
+export { seeMoreUrl, closeUrl, badgeUrl, modalHeadUrl, moveUrl };

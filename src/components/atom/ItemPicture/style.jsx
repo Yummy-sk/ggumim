@@ -10,10 +10,18 @@ export const Container = styled.div`
   border: 3px solid transparent;
   border-radius: 18px;
 
-  background-image: linear-gradient(#fff, #fff),
-    linear-gradient(163.54deg, #ff659e 8.22%, #f56b30 94.1%);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
+  ${props =>
+    props.active
+      ? `background-image: linear-gradient(#fff, #fff),
+         linear-gradient(163.54deg, #ff659e 8.22%, #f56b30 94.1%);
+         margin: 26px 4px;
+         padding: 2px;
+         border-radius: 18px;
+         background-origin: border-box;
+         background-clip: content-box, border-box;
+
+              `
+      : ''}
 `;
 
 export const Wrapper = styled.div`
@@ -26,6 +34,7 @@ export const Wrapper = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   
+  ${props => !props.active && `border: 2px solid #d3d3d3;`}
 
   border-radius: 18px;
 
