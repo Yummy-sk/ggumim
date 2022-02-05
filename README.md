@@ -48,7 +48,8 @@
 
 ## 과제 시연
 
-![example](https://i.ibb.co/DRV0gf2/ezgif-5-7f2677cae8.gif)
+![ezgif-5-7f2677cae8-min](https://user-images.githubusercontent.com/60822846/152636117-f01a46f9-726e-4f67-85ac-ac707bd8455e.gif)
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
