@@ -6,14 +6,14 @@ import * as S from './style';
 export function ItemPicture({ list, onClick }) {
   const { imageUrl, outside, discountRate, productId, isClick } = list;
   const itemPicRef = useRef();
-  console.log('ds');
+
   return (
-    <S.Container
-      active={isClick}
-      onClick={e => onClick(productId, e)}
-      ref={itemPicRef}
-    >
-      <S.Wrapper img={imageUrl} active={isClick}>
+    <S.Container active={isClick} ref={itemPicRef}>
+      <S.Wrapper
+        onClick={e => onClick(productId, e)}
+        img={imageUrl}
+        active={isClick}
+      >
         {!outside ? <DiscountBadge discountRate={discountRate} /> : null}
       </S.Wrapper>
     </S.Container>

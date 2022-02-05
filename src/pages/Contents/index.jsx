@@ -13,8 +13,6 @@ export function Contents({ data }) {
   );
 
   const onClick = (id, e) => {
-    console.log('클릭!');
-
     console.log(e);
     setLists(
       lists.map(list =>

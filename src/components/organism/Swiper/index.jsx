@@ -21,15 +21,14 @@ export function Swiper({ lists, onClick }) {
   };
 
   const onMouseDown = e => {
-    e.stopPropagation();
-    e.preventDefault();
     setPressed(true);
     setStartX(e.nativeEvent.offsetX - innerSlider.current.offsetLeft);
   };
 
   const onMouseMove = e => {
+    innerSlider.current.style.pointerEvents = 'none';
     e.preventDefault();
-    e.stopPropagation();
+
     if (!pressed) return;
 
     const {
@@ -41,6 +40,7 @@ export function Swiper({ lists, onClick }) {
 
   useEffect(() => {
     window.addEventListener('mouseup', () => {
+      innerSlider.current.style.pointerEvents = 'auto';
       setPressed(false);
       checkBoundary();
     });
