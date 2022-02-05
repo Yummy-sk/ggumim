@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/ggumim/static/js/main.5a1aeb50.js",
+    "main.js": "/ggumim/static/js/main.cda06dbb.js",
     "index.html": "/ggumim/index.html",
-    "main.5a1aeb50.js.map": "/ggumim/static/js/main.5a1aeb50.js.map"
+    "main.cda06dbb.js.map": "/ggumim/static/js/main.cda06dbb.js.map"
   },
   "entrypoints": [
-    "static/js/main.5a1aeb50.js"
+    "static/js/main.cda06dbb.js"
   ]
 }
