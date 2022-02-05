@@ -6,6 +6,8 @@ export const Container = styled.div`
   width: 100%;
   height: 200px;
   overflow: hidden;
+
+  cursor: pointer;
 `;
 
 export const SliderBoundary = styled.div`
