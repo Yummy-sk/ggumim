@@ -12,8 +12,7 @@ export function Contents({ data }) {
     }),
   );
 
-  const onClick = (id, e) => {
-    console.log(e);
+  const onClick = id => {
     setLists(
       lists.map(list =>
         list.productId === id

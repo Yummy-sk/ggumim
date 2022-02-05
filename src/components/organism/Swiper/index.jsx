@@ -26,9 +26,8 @@ export function Swiper({ lists, onClick }) {
   };
 
   const onMouseMove = e => {
-    innerSlider.current.style.pointerEvents = 'none';
     e.preventDefault();
-
+    innerSlider.current.style.pointerEvents = 'none';
     if (!pressed) return;
 
     const {

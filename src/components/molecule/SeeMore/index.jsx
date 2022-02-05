@@ -10,7 +10,7 @@ export function SeeMore({ list, onClick }) {
 
   return (
     <S.Container x={adjustedX} y={adjustedY}>
-      <TagIcon isClick={isClick} onClick={e => onClick(productId, e)} />
+      <TagIcon isClick={isClick} onClick={() => onClick(productId)} />
       <Modal list={list} location={{ x: adjustedX, y: adjustedY }} />
     </S.Container>
   );

@@ -10,7 +10,7 @@ export function ItemPicture({ list, onClick }) {
   return (
     <S.Container active={isClick} ref={itemPicRef}>
       <S.Wrapper
-        onClick={e => onClick(productId, e)}
+        onMouseDown={() => onClick(productId)}
         img={imageUrl}
         active={isClick}
       >

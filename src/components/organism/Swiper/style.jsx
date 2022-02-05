@@ -12,6 +12,7 @@ export const SliderBoundary = styled.div`
   position: absolute;
 
   height: 100%;
+  width: fit-content;
 
   display: flex;
 
