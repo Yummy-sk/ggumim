@@ -1,71 +1,172 @@
-# Getting Started with Create React App
+<div id="top"></div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- PROJECT SHIELDS -->
+<div align='center'>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=blue"/>
+</div>
 
-## Available Scripts
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
 
-In the project directory, you can run:
+  <h3 align="center">집꾸미기</h3>
 
-### `npm start`
+  <p align="center">
+    집꾸미기 API를 통해 상품 선택 기능을 구현해봤습니다.
+    <br />
+    <br />
+    <a href="https://yummy-sk.github.io/ggumim/"><strong>배포 링크</strong></a>
+  </p>
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<br>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br>
 
-### `npm test`
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#과제-소개">과제 소개</a></li>
+    <li><a href="#구현한-기능">구현한 기능</a></li>
+    <li>
+      <a href="#설치-및-실행">설치 및 실행
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#프로젝트-구조">프로젝트 </a></li>
+  </ol>
+</details>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br>
+<hr>
+<br>
 
-### `npm run build`
+<!-- 과제 소개 -->
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 과제 소개
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-   추가적으로 가구 이미지 슬라이더에 드래그 기능을 추가했습니다.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![example](https://i.ibb.co/DRV0gf2/ezgif-5-7f2677cae8.gif)
 
-### `npm run eject`
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<br>
+<hr>
+<br>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<!-- 구현한 기능 -->
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 구현한 기능
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+-   [x] 가구 정보 뷰어 구현
+    -   [x] 돋보기 아이콘을 클릭하면 상품 정보 tool tip을 출력하고, 돋보기 아이콘을 닫기 아이콘으로 변경한다.
+    -   [x] tool tip이 출력되는 상태에서 다른 돋보기를 클릭하면 노출되던 tool tip 대신 새로운 tool tip을 출력한다.
+    -   [x] 배경 이미지를 클릭하면 노출되던 tool tip이 닫힌다.
+    -   [x] 돋보기가 위치한 사분면에 따라 tool tip의 위치가 변한다.
+-   [x] 가구 이미지 슬라이더 구현
+    -   [x] 가구 이미지를 클릭해 선택할 시 선택한 가구를 붉은색 테두리로 표시한다.
+    -   [x] 선택한 가구 이미지를 다시 클릭하면 선택이 풀린다.
+    -   [x] 슬라이더를 마우스로 드래그할 시 가구 이미지를 움직일 수 있다.
+    -   [x] 할인율이 존재하는 가구의 경우 상단에 할인율을 표시한다.
+-   [x] 가구 정보 뷰어와 가구 이미지 슬라이더 간 선택된 가구를 공유한다.
 
-## Learn More
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<br>
+<hr>
+<br>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<!-- 설치 및 실행 -->
 
-### Code Splitting
+## 설치 및 실행
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Prerequisites
 
-### Analyzing the Bundle Size
+1. npm
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```sh
+npm install npm@latest -g
+```
 
-### Making a Progressive Web App
+### Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. Repo를 clone한다
+    ```sh
+    git clone https://github.com/gml9812/wanted-frontend-pre-on-boarding-mission.git
+    ```
+2. NPM pakage들을 설치한다
+    ```sh
+    npm install
+    ```
+3. localhost에서 프로젝트를 실행한다
+    ```sh
+    npm start
+    ```
 
-### Advanced Configuration
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<br>
+<hr>
+<br>
 
-### Deployment
+<!-- 프로젝트 구조 -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 프로젝트 구조
 
-### `npm run build` fails to minify
+```bash
+src
+ ┣ components
+ ┃ ┣ atom
+ ┃ ┃ ┣ DiscountBadge
+ ┃ ┃ ┃ ┣ index.jsx
+ ┃ ┃ ┃ ┗ style.jsx
+ ┃ ┃ ┣ ItemPicture
+ ┃ ┃ ┃ ┣ index.jsx
+ ┃ ┃ ┃ ┗ style.jsx
+ ┃ ┃ ┣ Modal
+ ┃ ┃ ┃ ┣ index.jsx
+ ┃ ┃ ┃ ┗ style.jsx
+ ┃ ┃ ┣ Photo
+ ┃ ┃ ┃ ┣ index.jsx
+ ┃ ┃ ┃ ┗ style.jsx
+ ┃ ┃ ┗ TagIcon
+ ┃ ┃ ┃ ┣ index.jsx
+ ┃ ┃ ┃ ┗ style.jsx
+ ┃ ┣ molecule
+ ┃ ┃ ┗ SeeMore
+ ┃ ┃ ┃ ┣ index.jsx
+ ┃ ┃ ┃ ┗ style.jsx
+ ┃ ┣ organism
+ ┃ ┃ ┣ PhotoView
+ ┃ ┃ ┃ ┗ index.jsx
+ ┃ ┃ ┗ Swiper
+ ┃ ┃ ┃ ┣ index.jsx
+ ┃ ┃ ┃ ┗ style.jsx
+ ┃ ┗ index.js
+ ┣ hooks
+ ┃ ┣ index.js
+ ┃ ┗ useFetch.jsx
+ ┣ pages
+ ┃ ┣ Contents
+ ┃ ┃ ┣ index.jsx
+ ┃ ┃ ┗ style.jsx
+ ┃ ┗ index.js
+ ┣ utils
+ ┃ ┣ index.js
+ ┃ ┣ putCommaAtPrice.js
+ ┃ ┗ urls.js
+ ┣ .eslintrc.js
+ ┣ .prettierrc.js
+ ┣ App.jsx
+ ┗ index.jsx
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# wanted_ggumim
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<br>
+<hr>
+<br>
