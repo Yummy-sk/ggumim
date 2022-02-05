@@ -46,11 +46,9 @@
 
 <!-- 과제 소개 -->
 
-## 과제 소개
+## 과제 
 
--   추가적으로 가구 이미지 슬라이더에 드래그 기능을 추가했습니다.
-
-![example](https://i.ibb.co/DRV0gf2/ezgif-5-7f2677cae8.gif)
+![ezgif-5-7f2677cae8-min](https://user-images.githubusercontent.com/60822846/152635938-6225fe8b-4676-4c3a-b3dd-eca6cf7c2f67.gif)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
